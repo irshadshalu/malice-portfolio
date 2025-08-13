@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhushan Talukdar - Retro Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Interactive Background Pattern -->
+    <div class="background-pattern"></div>
+    
+    <!-- Desktop Container -->
+    <div class="desktop">
+        <!-- Introduction Window -->
+        <div class="window" id="intro-window" style="top: 100px; left: 100px;">
+            <div class="window-header">
+                <span class="window-title">INTRODUCTION</span>
+                <div class="window-controls">
+                    <button class="minimize">_</button>
+                    <button class="maximize">□</button>
+                    <button class="close">×</button>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="intro-content">
+                    <div class="intro-header">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23ff6b6b'/%3E%3C/svg%3E" alt="folder" class="pixel-icon">
+                        <span>Jr. Product Designer</span>
+                    </div>
+                    <div class="intro-header">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='%234dabf7'/%3E%3C/svg%3E" alt="location" class="pixel-icon">
+                        <span>Bengaluru, India</span>
+                    </div>
+                    <p class="intro-text">
+                        Hey there, I'm your friendly neighborhood pixel wrangler. For the past 1.5 years, I've been designing interfaces that don't just work... they vibe. I turn complex ideas into smooth, scroll-stopping experiences. Always down to talk UX, roast sprinkle of 'wow'. Whether it's crafting sleek product flows or adding that one micro interaction you didn't know you needed, I make sure your users leave smiling.
+                    </p>
+                    <div class="connect-section">
+                        <h3>LET'S CONNECT</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon gmail" title="Email">📧</a>
+                            <a href="#" class="social-icon instagram" title="Instagram">📷</a>
+                            <a href="#" class="social-icon linkedin" title="LinkedIn">💼</a>
+                            <a href="#" class="social-icon behance" title="Behance">🎨</a>
+                        </div>
+                    </div>
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect width='150' height='150' fill='%23f8f9fa'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='monospace' font-size='14' fill='%23495057'%3EPortrait%3C/text%3E%3C/svg%3E" alt="Portrait" class="portrait">
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Windows (hidden by default) -->
+        <div class="window" id="projects-window" style="display: none; top: 150px; left: 200px;">
+            <div class="window-header">
+                <span class="window-title">PROJECTS</span>
+                <div class="window-controls">
+                    <button class="minimize">_</button>
+                    <button class="maximize">□</button>
+                    <button class="close">×</button>
+                </div>
+            </div>
+            <div class="window-content">
+                <h2>My Projects</h2>
+                <div class="project-grid">
+                    <div class="project-item">
+                        <h3>Project 1</h3>
+                        <p>A cool retro-style application with pixel-perfect design.</p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Project 2</h3>
+                        <p>Interactive UI components with nostalgic vibes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="window" id="mail-window" style="display: none; top: 200px; left: 300px;">
+            <div class="window-header">
+                <span class="window-title">MAIL</span>
+                <div class="window-controls">
+                    <button class="minimize">_</button>
+                    <button class="maximize">□</button>
+                    <button class="close">×</button>
+                </div>
+            </div>
+            <div class="window-content">
+                <h2>Contact Me</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" class="retro-input">
+                    <input type="email" placeholder="Your Email" class="retro-input">
+                    <textarea placeholder="Your Message" class="retro-textarea"></textarea>
+                    <button type="submit" class="retro-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="window" id="music-window" style="display: none; top: 250px; left: 400px;">
+            <div class="window-header">
+                <span class="window-title">MUSIC PLAYER</span>
+                <div class="window-controls">
+                    <button class="minimize">_</button>
+                    <button class="maximize">□</button>
+                    <button class="close">×</button>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="music-player">
+                    <h2>Now Playing</h2>
+                    <div class="track-info">
+                        <p>🎵 Retro Vibes Mix</p>
+                        <div class="player-controls">
+                            <button class="retro-button">⏮</button>
+                            <button class="retro-button">▶</button>
+                            <button class="retro-button">⏭</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="window" id="console-window" style="display: none; top: 300px; left: 500px;">
+            <div class="window-header">
+                <span class="window-title">CONSOLE</span>
+                <div class="window-controls">
+                    <button class="minimize">_</button>
+                    <button class="maximize">□</button>
+                    <button class="close">×</button>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="console">
+                    <pre>
+> Welcome to Bhushan's Portfolio Terminal
+> Type 'help' for available commands
+> _
+                    </pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="window" id="love-window" style="display: none; top: 120px; left: 250px;">
+            <div class="window-header">
+                <span class="window-title">FAVORITES</span>
+                <div class="window-controls">
+                    <button class="minimize">_</button>
+                    <button class="maximize">□</button>
+                    <button class="close">×</button>
+                </div>
+            </div>
+            <div class="window-content">
+                <h2>Things I Love</h2>
+                <ul class="love-list">
+                    <li>💻 Clean Code</li>
+                    <li>🎨 Pixel Art</li>
+                    <li>☕ Coffee</li>
+                    <li>🎮 Retro Games</li>
+                    <li>🌟 User Experience</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Taskbar -->
+    <div class="taskbar">
+        <button class="taskbar-item" data-window="projects-window" title="Projects">
+            <svg class="taskbar-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="4" width="12" height="10" fill="currentColor"/>
+                <rect x="4" y="2" width="8" height="2" fill="currentColor"/>
+                <rect x="4" y="6" width="2" height="2" fill="#fff"/>
+                <rect x="8" y="6" width="4" height="2" fill="#fff"/>
+                <rect x="4" y="10" width="8" height="2" fill="#fff"/>
+            </svg>
+        </button>
+        <button class="taskbar-item" data-window="mail-window" title="Mail">
+            <svg class="taskbar-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="4" width="12" height="8" fill="currentColor"/>
+                <polygon points="2,4 8,8 14,4" fill="#fff" stroke="currentColor" stroke-width="1"/>
+            </svg>
+        </button>
+        <button class="taskbar-item" data-window="music-window" title="Music">
+            <svg class="taskbar-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="2" width="2" height="10" fill="currentColor"/>
+                <rect x="10" y="4" width="2" height="8" fill="currentColor"/>
+                <rect x="6" y="8" width="4" height="4" fill="currentColor"/>
+                <rect x="12" y="10" width="4" height="4" fill="currentColor"/>
+                <rect x="6" y="2" width="6" height="2" fill="currentColor"/>
+            </svg>
+        </button>
+        <button class="taskbar-item" data-window="console-window" title="Console">
+            <svg class="taskbar-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="12" height="12" fill="currentColor"/>
+                <rect x="3" y="3" width="10" height="10" fill="#000"/>
+                <text x="4" y="8" fill="#0f0" font-family="monospace" font-size="6">></text>
+                <rect x="7" y="6" width="4" height="1" fill="#0f0"/>
+            </svg>
+        </button>
+        <button class="taskbar-item" data-window="intro-window" title="About">
+            <svg class="taskbar-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="2" width="4" height="4" fill="currentColor"/>
+                <rect x="4" y="6" width="8" height="4" fill="currentColor"/>
+                <rect x="5" y="10" width="2" height="4" fill="currentColor"/>
+                <rect x="9" y="10" width="2" height="4" fill="currentColor"/>
+                <rect x="7" y="3" width="2" height="2" fill="#fff"/>
+            </svg>
+        </button>
+        <button class="taskbar-item" data-window="love-window" title="Favorites">
+            <svg class="taskbar-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 3 Q2 3 2 5 Q2 7 4 9 L8 13 L12 9 Q14 7 14 5 Q14 3 12 3 Q10 3 8 5 Q6 3 4 3" fill="currentColor"/>
+                <rect x="5" y="5" width="2" height="2" fill="#fff"/>
+            </svg>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
